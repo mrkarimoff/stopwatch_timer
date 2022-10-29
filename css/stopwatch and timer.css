@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.wrapper {
+    display: flex;
+    max-height: 700px;
+}
+
+.container {
+    width: 400px;
+    border: 2px solid;
+    margin: 100px 0 0 100px;
+    padding: 10px;
+    background-color: rgb(177, 72, 233);
+    border-radius: 20px;
+}
+
+.container .watch-header {
+    widows: 100%;
+    border-bottom: 2px solid rgb(60, 8, 247);
+    color: rgb(27, 20, 66);
+}
+
+.container .watch-header h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
+
+.container .watch-body {
+    width: 100%;
+    border-bottom: 2px solid rgb(60, 8, 247);
+    margin: 20px 0 20px 0;
+}
+
+.container .watch-body .time-box {
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgb(236, 247, 245);
+}
+
+.container .watch-body .line {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(60, 8, 247);
+}
+
+.container .watch-body table {
+    display: flex;
+}
+
+.container .watch-body tbody {
+    width: 100%;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.container .watch-body tr {
+    display: flex;
+    gap: 125px;
+    margin: 10px 0 10px 0;
+}
+
+.container .watch-body tr.active {
+    gap: 115px;
+}
+
+.container .watch-body th {
+    font-size: 22px;
+    color: rgb(236, 247, 245);
+
+}
+
+.container .watch-footer {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container .watch-footer button {
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(7, 19, 68);
+    color: #fff;
+}
+
+.container .watch-footer button:focus {
+    background-color: red;
+}
+
+.container .watch-footer button:active {
+    outline: 2px yellow;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(7, 19, 68);
+    border-radius: 10px;
+}
+
+/* ! Timer is here */
+
+.timer {
+    width: 500px;
+    height: 300px;
+}
+
+.timer .watch-body .time-cont form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timer .watch-body .time-cont form input {
+    width: 80px;
+    height: 60px;
+    font-size: 28px;
+    padding-left: 14px;
+    text-align: center;
+    margin-bottom: 2px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.timer .watch-body .time-cont form input:disabled {
+    background-color: rgb(21, 8, 95);
+    color: #fff;
+}
+
+.timer .watch-body .time-cont form p {
+    font-size: 44px;
+}
+
+.timer .watch-body .time-cont .text {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin-bottom: 15px;
+}
+
+.timer .watch-body .time-cont .text p {
+    font-family: sans-serif;
+    width: 78px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.timer .watch-body .time-cont .note {
+    display: none;
+    text-align: center;
+    color: rgb(7, 19, 68);
+    margin-bottom: 5px;
+}
+
+.timer .watch-body .time-cont .note2 {
+    display: none;
+    margin-bottom: 8px;
+    text-align: center;
+    background-color: rgb(12, 6, 73);
+    color: red;
+}
+
+.timer .watch-body .time-cont .note.active {
+    display: block;
+}

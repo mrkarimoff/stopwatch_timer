@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopwatch and timer</title>
+    <link rel="stylesheet" href="./css/stopwatch and timer.css">
+</head>
+
+<body>
+    <!-- stopwatch -->
+    <div class="wrapper">
+        <div class="container">
+            <div class="watch-header">
+                <h1>This is a stopwatch</h1>
+            </div>
+            <div class="watch-body">
+                <div class="time-cont">
+                </div>
+                <div class="line"></div>
+                <table id="table">
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="watch-footer">
+                <button onclick="handleStart()" id="start-btn">start</button>
+                <button onclick="handleStop()" id="stop-btn">stop</button>
+                <button onclick="handleInteval()" id="lap-btn">lap</button>
+                <button onclick="handleClear()" id="reset-btn">reset</button>
+            </div>
+        </div>
+        <div class="container timer">
+            <div class="watch-header">
+                <h1>This is a countdown timer</h1>
+            </div>
+            <div class="watch-body">
+                <div class="time-cont time-cont2">
+                    <h2 class="note2">Please enter valid numbers</h2>
+                    <form>
+                        <input id="hour-inp" type="number" placeholder="00">
+                        <p>:</p>
+                        <input id="minute-inp" type="number" placeholder="00">
+                        <p>:</p>
+                        <input id="second-inp" type="number" placeholder="00">
+                    </form>
+                    <div class="text">
+                        <p class="hours-text">HOURS</p>
+                        <p class="minutes-text">MINUTES</p>
+                        <p class="seconds-text">SECONDS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="watch-footer">
+                <button id="start-btn2" onclick="startTimer()">start</button>
+                <button id="pause-btn" onclick="pauseTimer()">pause</button>
+                <button onclick="resetTimer()">reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/stopwatch and timer.js"></script>
+</body>
+
+</html>
